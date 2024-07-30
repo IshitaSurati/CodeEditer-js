@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Online Code Editor</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>HTML</h3>
+                <textarea id="html-editor" class="form-control" rows="10" placeholder="Write HTML here..."></textarea>
+            </div>
+            <div class="col-md-4">
+                <h3>CSS</h3>
+                <textarea id="css-editor" class="form-control" rows="10" placeholder="Write CSS here..."></textarea>
+            </div>
+            <div class="col-md-4">
+                <h3>JavaScript</h3>
+                <textarea id="js-editor" class="form-control" rows="10" placeholder="Write JavaScript here..."></textarea>
+            </div>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="runCode()">Run Code</button>
+        <h3 class="mt-4">Output</h3>
+        <iframe id="output" class="border"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
